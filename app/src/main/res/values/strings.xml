@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Sri Sita Laxmi Enterprises</string>
+    <string name="inscan">INSCAN</string>
+    <string name="date">Date:</string>
+    <string name="consignment_no">Consignment no.</string>
+    <string name="datepicker">datepicker</string>
+    <string name="conno_search">conno_search</string>
+    <string name="enter_manually">Enter manually</string>
+    <string name="save">Save</string>
+    <string name="empty">Fields not empty</string>
+    <string name="emptydate">Date filed is empty</string>
+    <string name="emptyconno">Consignment number field is empty</string>
+    <string name="logo">Logo</string>
+    <string name="search_conno_empty">Field is empty</string>
+    <string name="detailsnotfound">details not found</string>
+    <string name="drs">DRS</string>
+    <string name="drs_no">DRS No.</string>
+    <string name="close_drs">Close DRS</string>
+    <string name="drsempty">Drs No field is empty</string>
+    <string name="emptyconno_drs">consignment no. field  is empty</string>
+    <string name="search">Search</string>
+    <string name="pod">POD</string>
+    <string name="reciever_name">Reciever Name</string>
+    <string name="delivered_date">Delivered Date</string>
+    <string name="recname_empty">Reciever Name field is empty</string>
+    <string name="pod_con_empty">Cosngment no. field is empty</string>
+    <string name="empty_pod_date">Date field is empty</string>
+    <string name="returns">Returns</string>
+    <string-array name="courierbranches">
+        <item>Trackon</item>
+        <item>ST Courier</item>
+        <item>Sri Maruthi</item>
+        <item>Fedex</item>
+        <item> others</item>
+    </string-array>
+    <string-array name="areas">
+        <item>Day and Night</item>
+        <item>Ramalaxmana Jn.</item>
+        <item>Womens coll.Road</item>
+        <item>Old Srikakulam</item>
+        <item>GujarathiPeta</item>
+    </string-array>
+</resources>
