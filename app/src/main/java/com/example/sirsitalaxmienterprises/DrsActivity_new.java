@@ -54,7 +54,7 @@ Spinner areas;
                         String area  = areas.getSelectedItem().toString();
                         String date = et_date_drs_new.getText().toString();
                         String drsno = et_drs_new_drsno.getText().toString();
-                        Toast.makeText(DrsActivity_new.this, result.getText(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DrsActivity_new.this, result.getText()+"Added", Toast.LENGTH_SHORT).show();
                         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Drs");
                         Drshelperclass drshelperclass = new Drshelperclass(date,drsno,result.getText(),area);
                         reference.child(result.getText()).setValue(drshelperclass);

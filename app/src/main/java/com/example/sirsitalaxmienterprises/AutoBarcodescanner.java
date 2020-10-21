@@ -50,7 +50,7 @@ int year,month,date;
                     @Override
                     public void run() {
                         if(!TextUtils.isEmpty(result.getText())) {
-                            Toast.makeText(AutoBarcodescanner.this, result.getText(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AutoBarcodescanner.this, result.getText()+"Added", Toast.LENGTH_SHORT).show();
                             String date = tv_date.getText().toString();
                             String courier = couiernames_inscan.getSelectedItem().toString();
                             DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Inscan");

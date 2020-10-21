@@ -5,27 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SearchActivity"
+    android:background="@color/white_smoke"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:title="@string/search"
-        android:textAlignment="center"
+        android:layout_height="40dp"
         android:gravity="center_horizontal"
-        app:titleTextColor="@color/blue"/>
+        android:textAlignment="center"
+        app:title="@string/search"
+        app:titleTextColor="@color/blue" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10sp">
-    <EditText
-        android:id="@+id/conno_et_search"
-        android:layout_width="222dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40sp"
-        android:hint="@string/consignment_no"
-        android:inputType="number" />
+        android:layout_height="36dp"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/conno_et_search"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40sp"
+            android:hint="@string/consignment_no"
+            android:inputType="number" />
 
         <Button
             android:id="@+id/search_btn"
@@ -46,6 +49,8 @@
         android:layout_height="wrap_content"
         android:text="@string/inscan"
         android:textSize="20sp"
+        android:visibility="invisible"
+        android:id="@+id/tv_inscan_head"
         android:textColor="@color/blue"
         android:textAlignment="center"
         android:layout_marginTop="10sp"
@@ -64,13 +69,16 @@
         android:textColor="@color/blue"
         android:textAlignment="center"
         android:layout_marginTop="10sp"
+        android:visibility="invisible"
+        android:id="@+id/tv_drs_head"
         android:gravity="center_horizontal" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:id="@+id/tv_result_details_drs"
-        android:layout_marginTop="10sp"/>
+        android:layout_marginTop="10sp"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,12 +87,31 @@
         android:textColor="@color/blue"
         android:textAlignment="center"
         android:layout_marginTop="10sp"
+        android:visibility="invisible"
+        android:id="@+id/tv_pod_head"
         android:gravity="center_horizontal" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:id="@+id/tv_result_details_pod"
+        android:layout_marginTop="10sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/returns"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:textAlignment="center"
+        android:layout_marginTop="10sp"
+        android:gravity="center_horizontal"
+        android:visibility="invisible"
+        android:id="@+id/tv_returns_head"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tv_result_returns"
         android:layout_marginTop="10sp"/>
 
 

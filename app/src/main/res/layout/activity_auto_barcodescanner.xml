@@ -44,17 +44,19 @@
             android:layout_height="wrap_content"
             android:id="@+id/courier_branch_inscan_new"
             android:entries="@array/courierbranches"
+            android:layout_marginTop="10sp"
             android:outlineSpotShadowColor="@color/blue"
             tools:ignore="UnusedAttribute"
             />
     <com.budiyev.android.codescanner.CodeScannerView
         android:id="@+id/barcodescan"
         android:layout_width="match_parent"
-        android:layout_height="630dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="3dp"
         app:frameAspectRatioHeight="1"
         app:frameAspectRatioWidth="2.5"
         app:frameCornersRadius="30dp"
         app:frameCornersSize="30dp"
-        app:maskColor="#77000000" />
+        app:maskColor="@color/light_slate_gray" />
 
 </LinearLayout>

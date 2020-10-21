@@ -26,6 +26,9 @@
     <string name="pod_con_empty">Cosngment no. field is empty</string>
     <string name="empty_pod_date">Date field is empty</string>
     <string name="returns">Returns</string>
+    <string name="manifest_no">Manifest No.</string>
+    <string name="return_date">Return Date:</string>
+    <string name="close">Close</string>
     <string-array name="courierbranches">
         <item>Trackon</item>
         <item>ST Courier</item>
@@ -39,5 +42,14 @@
         <item>Womens coll.Road</item>
         <item>Old Srikakulam</item>
         <item>GujarathiPeta</item>
+    </string-array>
+    <string-array name="returnsreason">
+        <item>Wrong Address</item>
+        <item>Misroute</item>
+        <item>Address not found</item>
+        <item>Party Shifted</item>
+        <item>No service</item>
+        <item>ODA</item>
+        <item>Others</item>
     </string-array>
 </resources>
