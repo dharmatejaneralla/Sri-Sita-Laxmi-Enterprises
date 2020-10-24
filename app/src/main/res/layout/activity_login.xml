@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#CA6565">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sitalakshmienterpriseslogo"
+        android:layout_marginTop="50sp"
+        android:background="@color/white"
+        android:transformPivotX="50sp"/>
+
+    <EditText
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:layout_marginTop="150sp"
+        android:textColorHint="@color/white"
+        android:layout_marginStart="50sp"/>
+
+    <EditText
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="50sp"
+        android:hint="@string/password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="#0E0E0E"
+        android:layout_marginStart="120sp"
+        android:layout_marginTop="20sp"/>
+
+
+</LinearLayout>

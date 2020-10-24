@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_smoke"
+    tools:context=".ParcelInscanActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Parcel Inscan"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:titleTextColor="@color/blue"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/et_date_parcelinscan"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="date" />
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_datepicker"
+            android:id="@+id/datepicker_parcelinscan"
+            android:contentDescription="@string/datepicker" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="63dp"
+            android:text="@string/consignment_no"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_conno_parcelinscan"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_manually"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <ImageView
+            android:id="@+id/connosearch_parcelinscan"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search"
+            android:contentDescription="@string/conno_search" />
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="135dp"
+        android:layout_height="63dp"
+        android:text="@string/weight"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_wt_parcelinscan"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_manually"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wtname"
+        android:entries="@array/wtname"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="63dp"
+            android:text="@string/pcs"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_pcs_parcelinscan"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_manually"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="135dp"
+        android:layout_height="63dp"
+        android:text="@string/courier"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/courier_parcel"
+        android:entries="@array/courierbranches"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_error_parcelinscan"
+        android:textSize="20sp"
+        android:textColor="@color/red"/>
+    <Button
+        android:id="@+id/save_btn_parcelinscan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/save" />
+
+</LinearLayout>

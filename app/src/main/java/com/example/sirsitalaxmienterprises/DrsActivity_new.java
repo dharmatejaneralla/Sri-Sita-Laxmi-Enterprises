@@ -23,7 +23,7 @@ import java.util.Date;
 
 public class DrsActivity_new extends AppCompatActivity {
 public static  EditText et_drs_new_drsno;
-    EditText et_date_drs_new;
+    EditText et_date_drs_new,et_conno_new_drs;
 ImageView datepicker_drs_new,drs_search_new;
 CodeScanner mcodeScanner;
 Spinner areas;
@@ -35,6 +35,7 @@ Spinner areas;
         String cur_date = simpledate.format(new Date());
         et_date_drs_new = findViewById(R.id.et_new_date);
         et_date_drs_new.setText(cur_date);
+        et_conno_new_drs = findViewById(R.id.conno_drs_new);
         et_drs_new_drsno=findViewById(R.id.et_drsno_new);
         areas = findViewById(R.id.areas);
         findViewById(R.id.drssearch_new).setOnClickListener(new View.OnClickListener() {
@@ -64,6 +65,19 @@ Spinner areas;
 
 
                  }
+        });
+        findViewById(R.id.save_new_drs).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String area  = areas.getSelectedItem().toString();
+                String date = et_date_drs_new.getText().toString();
+                String drsno = et_drs_new_drsno.getText().toString();
+                String result = et_conno_new_drs.getText().toString();
+                DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Drs");
+                Drshelperclass drshelperclass = new Drshelperclass(date,drsno,result,area);
+                reference.child(result).setValue(drshelperclass);
+                et_conno_new_drs.setText("");
+            }
         });
         scannerView.setOnClickListener(new View.OnClickListener() {
             @Override

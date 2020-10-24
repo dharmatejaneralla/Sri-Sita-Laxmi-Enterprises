@@ -75,6 +75,13 @@
         android:entries="@array/areas"
         android:outlineSpotShadowColor="@color/blue"
         tools:ignore="UnusedAttribute" />
+    <EditText
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="10sp"
+        android:hint="@string/enter_manually"
+        android:id="@+id/conno_drs_new"/>
     <com.budiyev.android.codescanner.CodeScannerView
         android:id="@+id/barcodescan_new"
         android:layout_marginTop="10sp"
@@ -85,5 +92,15 @@
         app:frameCornersRadius="30dp"
         app:frameCornersSize="30dp"
         app:maskColor="@color/light_slate_gray" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/save_new_drs"
+        android:layout_marginStart="130sp"
+        android:layout_marginTop="20sp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
 
 </LinearLayout>

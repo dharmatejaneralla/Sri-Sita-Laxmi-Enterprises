@@ -49,8 +49,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50sp"
-        android:layout_marginTop="20sp">
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="40sp">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,6 +64,13 @@
             android:layout_marginStart="10sp"
             android:text="@string/returns"
             android:id="@+id/returns"
+            android:background="@color/light_blue"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:text="@string/parcelinscan"
+            android:id="@+id/parcelincan"
             android:background="@color/light_blue"/>
 
     </LinearLayout>

@@ -27,7 +27,7 @@ import java.util.Date;
 
 public class AutoBarcodescanner extends AppCompatActivity {
     private CodeScanner mcodescanner;
-    EditText tv_date;
+    EditText tv_date,et_conno_inscan;
     DatePickerDialog.OnDateSetListener setListener;
     Calendar calendar;
     Spinner couiernames_inscan;
@@ -89,6 +89,24 @@ int year,month,date;
                 tv_date.setText(Date);
             }
         };
+        findViewById(R.id.save_new_inscan).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!TextUtils.isEmpty(et_conno_inscan.getText().toString())) {
+                    if (!TextUtils.isEmpty(tv_date.getText().toString())) {
+                        if (!TextUtils.isEmpty(et_conno_inscan.getText().toString())) {
+                            String conno = et_conno_inscan.getText().toString();
+                            String date = tv_date.getText().toString();
+                            String courier = couiernames_inscan.getSelectedItem().toString();
+                            DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Inscan");
+                            HelperClass_Barcodenew helperClass = new HelperClass_Barcodenew(date, conno, courier);
+                            reference.child(conno).setValue(helperClass);
+                            et_conno_inscan.setText("");
+                        }
+                    }
+                }
+            }
+        });
     }
     @Override
     protected void onResume() {

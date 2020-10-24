@@ -6,8 +6,7 @@
     <string name="datepicker">datepicker</string>
     <string name="conno_search">conno_search</string>
     <string name="enter_manually">Enter manually</string>
-    <string name="save">Save</string>
-    <string name="empty">Fields not empty</string>
+    <string name="empty">Fields is empty</string>
     <string name="emptydate">Date filed is empty</string>
     <string name="emptyconno">Consignment number field is empty</string>
     <string name="logo">Logo</string>
@@ -20,15 +19,29 @@
     <string name="emptyconno_drs">consignment no. field  is empty</string>
     <string name="search">Search</string>
     <string name="pod">POD</string>
-    <string name="reciever_name">Reciever Name</string>
+    <string name="reciever_name">Receiver Name</string>
     <string name="delivered_date">Delivered Date</string>
-    <string name="recname_empty">Reciever Name field is empty</string>
+    <string name="recname_empty">Receiver Name field is empty</string>
     <string name="pod_con_empty">Cosngment no. field is empty</string>
     <string name="empty_pod_date">Date field is empty</string>
     <string name="returns">Returns</string>
     <string name="manifest_no">Manifest No.</string>
     <string name="return_date">Return Date:</string>
     <string name="close">Close</string>
+    <string name="username">USERNAME</string>
+    <string name="emptypcs">Pcs Field is empty</string>
+    <string name="emptywt">Wt Field is empty</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">LOGIN</string>
+    <string name="save">Save</string>
+    <string name="weight">Weight</string>
+    <string name="pcs">pcs</string>
+    <string name="courier">Courier</string>
+    <string name="parcelinscan">parcelinscan</string>
+    <string-array name="wtname">
+        <item>grams</item>
+        <item>kgs</item>
+    </string-array>
     <string-array name="courierbranches">
         <item>Trackon</item>
         <item>ST Courier</item>

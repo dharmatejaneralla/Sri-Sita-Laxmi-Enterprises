@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReturnsConnoScanner"></activity>
+        <activity android:name=".ParcelInscanConnoScan"></activity>
+        <activity android:name=".ParcelInscanActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".ReturnsConnoScanner" />
         <activity android:name=".ReturnsMsfnoScanner" />
         <activity android:name=".ReturnsActivity" />
         <activity android:name=".DrsActivity_new" />
